@@ -9,47 +9,56 @@ import Resume from './Components/Resume';
 import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
+import AOS from 'aos';
 
 class App extends Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       foo: 'bar',
-      resumeData: {}
+      resumeData: {},
     };
-
   }
-
-  getResumeData(){
+ 
+  getResumeData() {
     $.ajax({
-      url:'/resumeData.json',
-      dataType:'json',
+      url: '/resumeData.json',
+      dataType: 'json',
       cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
+      success: function (data) {
+        this.setState({ resumeData: data });
       }.bind(this),
-      error: function(xhr, status, err){
+      error: function (xhr, status, err) {
         console.log(err);
         alert(err);
-      }
+      },
     });
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.getResumeData();
+    AOS.init({
+      // initialise with other settings
+      duration: 8000,
+    });
   }
 
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        <Testimonials data={this.state.resumeData.testimonials}/>
-        <Contact data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/>
+        <Header data-aos="fade-up" data={this.state.resumeData.main} />
+        <About  data={this.state.resumeData.main} />
+        <Resume
+         
+          data={this.state.resumeData.resume}
+        />
+        <Portfolio
+        
+          data={this.state.resumeData.portfolio}
+        />
+        <Testimonials data={this.state.resumeData.testimonials} />
+        <Contact  data={this.state.resumeData.main} />
+        <Footer  data={this.state.resumeData.main} />
       </div>
     );
   }
