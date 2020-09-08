@@ -1,0 +1,97 @@
+{
+  "main": {
+    "name": "Fahad Ado Muhammad",
+    "occupation": "ReactJS Developer ",
+    "description": "A React Developer @ BrainStorm IT Solution",
+    "image": "fahad.jpg",
+    "bio": "My name is Fahad, I'm a Frontend ReactJS Developer. Currently I'm working at Brainstorm IT Solution  ",
+    "contactmessage": "Get in touch with me to receive further details",
+    "email": "8790fahadado@gmail.com.com",
+    "phone": "+234 8067643479",
+    "address": {
+      "street": "108 Gama C Nassarawa LGA",
+      "city": "Kano",
+      "state": "Nigeria",
+      "zip": "700283"
+    },
+    "website": "#",
+    "resumedownload": "#",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://web.facebook.com/fahad.kauragoje.5/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/muhammad-fahad-ado-1506a31a0/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "#",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/8790fahad",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
+      {
+        "school": "Abubakar Tafawa Balewa University Bauchi",
+        "degree": "Computer Science",
+        "graduated": "2020",
+        "description": "Graduated with Second Class Upper"
+      }
+    ],
+    "work": [
+      {
+        "company": "Di-hub",
+        "title": "Team Member ",
+        "years": "April 2019 - Present",
+        "description": "Teaching ReactJS To young people"
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "50%"
+      },
+      {
+        "name": "CSS",
+        "level": "30%"
+      },
+      {
+        "name": "Git",
+        "level": "40%"
+      },
+      {
+        "name": "Figma && Adobe XD",
+        "level": "0%"
+      },
+      {
+        "name": "HTML5",
+        "level": "80%"
+      },
+      {
+        "name": "Mysql",
+        "level": "20%"
+      }
+    ]
+  },
+ 
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "I Like Solving Real Life Problems that will make life essier",
+        "user": "Abdul Liman"
+      }
+      
+    ]
+  }
+}
